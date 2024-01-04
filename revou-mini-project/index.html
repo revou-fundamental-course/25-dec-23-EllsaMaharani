@@ -2,25 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
 </head>
 <body>
-  <header id="navigation-bar">
-    <h3 id=""logo>Katik</h3>
-    <nav class="navigation">
-        <a href="">Luas Segitiga</a> 
-        <a href="">Keliling Segitiga</a>
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-graduation-cap"></i> Katik </a>
+
+    <nav class="navbar">
+        <a href="#home"> <i class="fas fa-angle-right"></i> home </a>
+        <a href="#luas"> <i class="fas fa-angle-right"></i> luas </a>
+        <a href="#keliling"> <i class="fas fa-angle-right"></i> keliling </a>
     </nav>
-  </header>  
-  <section class="input-luas-section">
-    <label for="input-tinggi" id="label_tinggi">Tinggi</label>
-    <input type="number" id="input-tinggi" class="katik-input">
-    <div class="buttons">
-        <button>Hitung</button>
-        <button>Reset</button>
+
+    <p class="credit">created by</p>
+    <p class="credit">Ellsa Maharani</p>
+
+</header>
+
+<section class="home" id="home">
+
+    <div class="image">
+        <img src="images/blog-3.svg" alt="">
     </div>
-  </section>
+
+    <div class="content">
+        <span>Kalkulator Hitung</span>
+        <h3>Luas dan Keliling Segitiga</h3>
+    </div>
+
+</section>
+
+<section class="luas" id="luas">
+
+    <div class="heading">
+        <span>Bangun Segitiga</span>
+        <h3>Menghitung Luas</h3>
+    </div>
+
+    <section class="input-kelilingluas-section">
+        <table>
+          <tr>
+            <td>Alas</td>
+            <td>:</td>
+            <td><input type="number" id="input-alas" class="katik-input "></td>
+          </tr>
+    
+          <tr>
+            <td>Tinggi</td>
+            <td>:</td>
+            <td><input type="number" id="input-tinggi" class="katik-input "></td>
+          </tr>
+    
+          <tr>
+            <td>Hasil Hitung</td>
+            <td>:</td>
+            <td><input type="number" id="input-luas" class="katik-input" disabled="true" size="s"></td>
+          </tr>
+    
+        </table>
+    
+        <div class="buttons">
+            <button>Hitung</button>
+            <button>Reset</button>
+        </div>
+      </section>
+    
+<section class="keliling" id="keliling">
+
+    <div class="heading">
+        <span>Bangun Segitiga</span>
+        <h3>Menghitung Keliling</h3>
+    </div>
+
+    <section class="input-kelilingluas-section">
+        <table>
+            <tr>
+                <td>Sisi A</td>
+                <td>:</td>
+                <td><input type="number" id="input-sisiA" class="katik-input"></td>
+            </tr>
+    
+            <tr>
+                <td>Sisi B</td>
+                <td>:</td>
+                <td><input type="number" id="input-sisiB" class="katik-input"></td>
+            </tr>
+    
+            <tr>
+                <td>Sisi C</td>
+                <td>:</td>
+                <td><input type="number" id="input-sisiC" class="katik-input"></td>
+            </tr>
+
+            <tr>
+                <td>Hasil Hitung</td>
+                <td>:</td>
+                <td><input type="number" id="input-keliling" class="katik-input" disabled="true" size="s"></td>
+              </tr>
+        </table>
+    
+        <div class="buttons">
+            <button>Hitung</button>
+            <button>Reset</button>
+        </div>
+    </section>
+
 </body>
 </html>
